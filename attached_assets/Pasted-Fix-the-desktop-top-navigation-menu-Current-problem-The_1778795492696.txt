@@ -1,0 +1,50 @@
+Fix the desktop top navigation menu.
+
+Current problem:
+The desktop top menu has too many separate links. It currently shows individual practice area links like Business Law and Estate Planning in the main nav, but those should only be inside the Practice Areas dropdown.
+
+Required desktop nav:
+The desktop top menu should ONLY show:
+- Home
+- About
+- Practice Areas
+- Contact
+
+Important:
+- Do NOT show Business Law as a separate top-level desktop nav item.
+- Do NOT show Estate Planning as a separate top-level desktop nav item.
+- Do NOT show Criminal Defense as a separate top-level desktop nav item.
+- Do NOT show Family Law as a separate top-level desktop nav item.
+- Those four pages should only be inside the Practice Areas dropdown.
+
+Practice Areas dropdown must include:
+- Estate Planning → /estate-planning
+- Business Law → /business-law
+- Criminal Defense → /criminal-defense
+- Family Law → /family-law
+
+Also keep:
+- The logo centered or in its current position.
+- The phone number visible: 801.369.7005
+- The current styling, colors, spacing, and layout as close as possible.
+- The existing mobile menu behavior, unless needed to keep these same links consistent.
+
+Very important restrictions:
+- Do NOT redesign the header.
+- Do NOT change the logo.
+- Do NOT change page content.
+- Do NOT create new pages.
+- Do NOT create new routes.
+- Do NOT remove the Practice Areas dropdown.
+- Do NOT break the mobile menu.
+- Do NOT change the chatbot.
+- Do NOT change the footer unless it is required for consistency.
+
+Please inspect the Header/Nav component and remove the duplicate top-level practice area links from the desktop nav only.
+
+After fixing:
+1. Tell me which file/component was edited.
+2. Confirm the desktop nav now only shows Home, About, Practice Areas, and Contact.
+3. Confirm the Practice Areas dropdown includes Estate Planning, Business Law, Criminal Defense, and Family Law.
+4. Confirm the phone number still appears.
+5. Confirm the mobile menu still works.
