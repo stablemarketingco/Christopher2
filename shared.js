@@ -34,23 +34,12 @@
   navLinks.forEach(function(item){
     if(item.children){
       var btn = document.createElement('button');
-      btn.className = 'mobile-expand-btn';
-      btn.setAttribute('aria-expanded','true');
-
-      var btnLabel = document.createElement('span');
-      btnLabel.textContent = item.label;
-
-      var btnArrow = document.createElement('span');
-      btnArrow.className = 'mobile-expand-arrow';
-      btnArrow.setAttribute('aria-hidden','true');
-      btnArrow.textContent = '▾';
-
-      btn.appendChild(btnLabel);
-      btn.appendChild(btnArrow);
+      btn.className = 'mobile-pa-btn';
+      btn.innerHTML = '<span>' + item.label + '</span><span class="mobile-pa-arrow" aria-hidden="true">&#9660;</span>';
       overlay.appendChild(btn);
 
       var subGroup = document.createElement('div');
-      subGroup.className = 'mobile-sub-group';
+      subGroup.className = 'mobile-pa-subs';
 
       item.children.forEach(function(child){
         var a = document.createElement('a');
@@ -62,11 +51,11 @@
 
       overlay.appendChild(subGroup);
 
+      var open = true;
       btn.addEventListener('click', function(){
-        var expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-        subGroup.classList.toggle('mobile-sub-group--collapsed', expanded);
-        btnArrow.style.transform = expanded ? 'rotate(-90deg)' : '';
+        open = !open;
+        subGroup.style.display = open ? 'block' : 'none';
+        btn.querySelector('.mobile-pa-arrow').style.transform = open ? '' : 'rotate(-90deg)';
       });
 
     } else {
