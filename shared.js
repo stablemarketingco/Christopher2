@@ -14,54 +14,8 @@
   }
   window.addEventListener('scroll', onScroll, {passive:true});
 
-  /* Mobile nav overlay */
-  var overlay = document.createElement('div');
-  overlay.className = 'mobile-nav-overlay';
-  overlay.setAttribute('aria-label','Mobile navigation');
-
-  var navLinks = [
-    {label:'Home', href:'index.html'},
-    {label:'Practice Areas', children:[
-      {label:'Estate Planning', href:'estate-planning.html'},
-      {label:'Business Law', href:'business-law.html'},
-      {label:'Criminal Defense', href:'criminal-defense.html'},
-      {label:'Family Law', href:'family-law.html'}
-    ]},
-    {label:'About', href:'index.html#about'},
-    {label:'Contact', href:'contact.html'}
-  ];
-
-  navLinks.forEach(function(item){
-    if(item.children){
-      var label = document.createElement('div');
-      label.className = 'mobile-section-label';
-      label.textContent = item.label;
-      overlay.appendChild(label);
-
-      item.children.forEach(function(child){
-        var a = document.createElement('a');
-        a.href = child.href;
-        a.textContent = child.label;
-        a.className = 'mobile-sub';
-        overlay.appendChild(a);
-      });
-    } else {
-      var a = document.createElement('a');
-      a.href = item.href;
-      a.textContent = item.label;
-      overlay.appendChild(a);
-    }
-  });
-
-  var ctaLink = document.createElement('a');
-  ctaLink.href = 'https://ashvalelaw.cliogrow.com/book/3494140267d6b8330a02c39e8ebb3258';
-  ctaLink.target = '_blank';
-  ctaLink.rel = 'noopener';
-  ctaLink.textContent = 'Schedule Consultation';
-  ctaLink.className = 'mobile-cta';
-  overlay.appendChild(ctaLink);
-
-  document.body.appendChild(overlay);
+  /* Mobile nav overlay — use inline HTML already in page */
+  var overlay = document.getElementById('mobile-nav-overlay');
 
   function openMenu(){
     overlay.classList.add('open');

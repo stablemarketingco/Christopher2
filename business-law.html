@@ -244,7 +244,46 @@
   </div>
 </footer>
 
-<a href="https://ashvalelaw.cliogrow.com/book/3494140267d6b8330a02c39e8ebb3258" target="_blank" rel="noopener" class="floating-chat" aria-label="Start consultation chat"><span class="chat-vertical">Start Chat</span><span class="chat-bubble">1</span></a>
+<div class="mobile-nav-overlay" id="mobile-nav-overlay">
+  <a href="index.html">Home</a>
+  <div class="mobile-section-label">Practice Areas</div>
+  <a href="estate-planning.html" class="mobile-sub">Estate Planning</a>
+  <a href="business-law.html" class="mobile-sub">Business Law</a>
+  <a href="criminal-defense.html" class="mobile-sub">Criminal Defense</a>
+  <a href="family-law.html" class="mobile-sub">Family Law</a>
+  <a href="index.html#about">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://ashvalelaw.cliogrow.com/book/3494140267d6b8330a02c39e8ebb3258" target="_blank" rel="noopener" class="mobile-cta">Schedule Consultation</a>
+</div>
+
+<div id="al-chat-widget" aria-live="polite">
+  <div id="al-chat-box" role="dialog" aria-modal="true" aria-label="Ashvale Legal Chat" hidden>
+    <div id="al-chat-header">
+      <div id="al-chat-header-info">
+        <div id="al-chat-avatar">CRT</div>
+        <div>
+          <div id="al-chat-name">Ashvale Legal</div>
+          <div id="al-chat-status">AI Assistant &bull; Not legal advice</div>
+        </div>
+      </div>
+      <button id="al-chat-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div id="al-chat-messages"></div>
+    <div id="al-chat-chips" style="display:none;"></div>
+    <div id="al-chat-disclaimer">I can help with basic questions, but I cannot provide legal advice. <a href="mailto:chris@ashvalelaw.com">Contact Christopher</a> for legal guidance.</div>
+    <div id="al-chat-cta-bar">
+      <a href="https://ashvalelaw.cliogrow.com/book/3494140267d6b8330a02c39e8ebb3258" target="_blank" rel="noopener" id="al-chat-cta-btn">Schedule a Free Consultation &rsaquo;</a>
+    </div>
+    <div id="al-chat-input-row">
+      <input type="text" id="al-chat-input" placeholder="Ask a question…" autocomplete="off" maxlength="300" aria-label="Type your question">
+      <button id="al-chat-send" aria-label="Send">&#10148;</button>
+    </div>
+  </div>
+  <button id="al-chat-toggle" aria-label="Open chat assistant" aria-expanded="false">
+    <span id="al-chat-toggle-icon">&#128172;</span>
+    <span id="al-chat-toggle-label">Chat with us</span>
+  </button>
+</div>
 
 <script src="shared.js"></script>
 </body>
