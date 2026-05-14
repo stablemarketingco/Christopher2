@@ -1,0 +1,43 @@
+I need you to make ONLY the following two changes to this website. Do not change anything else. Do not redesign the site. Do not change colors, layout, text, buttons, spacing, images, animations, sections, or desktop styling unless it is absolutely required for the two tasks below.
+
+TASK 1: Add an AI chatbot widget
+Create a simple AI chatbot for this attorney landing page.
+
+Placement:
+- The chatbot should appear in the bottom-right corner of the website.
+- It should be a small floating chat button when closed.
+- When clicked, it should open a clean chat box above the button.
+- It must work well on desktop and mobile.
+
+Purpose:
+- The chatbot is only for basic FAQ-style help.
+- It should answer simple questions about the attorney’s services, scheduling, consultations, contact options, and general website information.
+- It should NOT give legal advice.
+- If someone asks anything specific about their legal situation, the chatbot should politely say that it cannot provide legal advice and should direct them to contact Christopher directly.
+- The main goal is to encourage visitors to contact Christopher, the attorney.
+
+Important chatbot behavior:
+- Add a disclaimer like: “I can help with basic questions, but I cannot provide legal advice. Please contact Christopher directly for legal guidance.”
+- If the user asks something beyond simple FAQ, respond with: “For legal questions specific to your situation, please contact Christopher directly.”
+- Include a clear contact CTA inside the chatbot, such as “Contact Christopher” or “Schedule a Consultation.”
+- Use the existing contact form, phone number, email, or contact section already on the site if available.
+
+Do not connect to any paid API unless one already exists in the project. If no AI API is currently set up, create a simple rule-based FAQ chatbot that feels like an AI assistant but uses preset responses.
+
+TASK 2: Fix mobile image alignment
+On the mobile version of the site, the picture of Christopher is not centered. Fix only that mobile issue.
+
+Requirements:
+- Center Christopher’s image properly on mobile screens.
+- Do not change how it looks on desktop unless necessary.
+- Do not replace the image.
+- Do not crop it differently unless required to center it.
+- Do not change any other images.
+
+VERY IMPORTANT:
+Only make these two changes:
+1. Add the bottom-right FAQ chatbot.
+2. Center Christopher’s picture on mobile.
+
+Do not touch or change anything else on the website.
+After making changes, tell me exactly which files were edited and briefly explain what was changed.
