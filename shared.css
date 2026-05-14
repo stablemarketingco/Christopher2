@@ -261,8 +261,8 @@ p:last-child{margin-bottom:0}
 /* ─── RESPONSIVE ─── */
 @media(max-width:900px){
   .two-col{grid-template-columns:1fr;gap:40px}
-  .col-image{order:-1;display:flex;justify-content:center;align-items:center}
-  .col-image img{max-width:480px;width:100%}
+  .col-image{order:-1;width:100%;display:flex;justify-content:center;align-items:center;text-align:center}
+  .col-image img.attorney-photo{display:block;margin:0 auto;max-width:420px;width:100%!important}
   .footer-inner{grid-template-columns:1fr 1fr;gap:32px}
   .steps{flex-direction:column;align-items:center}
   .step-arrow{transform:rotate(90deg);padding:0 0 8px}
@@ -732,6 +732,28 @@ body{background:#fff;}
   border-bottom-right-radius:4px;
   align-self:flex-end;
 }
+#al-chat-chips{
+  flex-wrap:wrap;
+  gap:8px;
+  padding:10px 14px 4px;
+  border-top:1px solid var(--border);
+}
+.al-chip{
+  display:inline-flex;
+  align-items:center;
+  background:#fff;
+  border:1.5px solid var(--navy);
+  color:var(--navy);
+  border-radius:20px;
+  padding:6px 13px;
+  font-family:var(--font-sans);
+  font-size:.78rem;
+  font-weight:600;
+  cursor:pointer;
+  transition:background .17s, color .17s;
+  white-space:nowrap;
+}
+.al-chip:hover{background:var(--navy);color:#fff;}
 #al-chat-disclaimer{
   font-size:.72rem;
   color:var(--slate-light);

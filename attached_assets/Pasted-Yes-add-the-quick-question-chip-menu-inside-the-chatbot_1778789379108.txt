@@ -1,0 +1,41 @@
+Yes, add the “quick question” chip menu inside the chatbot, but ONLY make that chatbot update and the mobile portrait fix. Do not change anything else on the website.
+
+TASK 1: Add quick question chips inside the chatbot
+Inside the existing chatbot, add simple clickable quick-question buttons/chips so visitors can get answers with one tap.
+
+Add chips like:
+- “Schedule a consultation”
+- “What’s your pricing?”
+- “Where are you located?”
+- “What services do you offer?”
+- “How do I contact Christopher?”
+
+Requirements:
+- The chips should appear when the chatbot opens, preferably near the bottom above the input box or under the welcome message.
+- When a visitor taps a chip, the chatbot should automatically respond with the matching FAQ answer.
+- Keep the design clean and consistent with the current chatbot.
+- Make sure the chips work on mobile and desktop.
+- Do not connect to a paid AI API. Keep it rule-based unless the project already has an AI API set up.
+- Do not give legal advice. For legal-specific questions, the bot should direct visitors to contact Christopher directly.
+
+TASK 2: Fix the mobile self-portrait image again
+The mobile version is still not fixed. Christopher’s self-portrait picture is still off-center on mobile.
+
+Please inspect the actual mobile CSS/layout and fix the real cause.
+
+Requirements:
+- Center the self-portrait image of Christopher on mobile screens.
+- Fix the image container, image alignment, object-position, margins, flex/grid alignment, or responsive styling as needed.
+- Do not change the desktop version unless absolutely necessary.
+- Do not replace the image.
+- Do not change any other images.
+- Test/verify the mobile layout after fixing it.
+
+VERY IMPORTANT:
+Only make these two changes:
+1. Add quick-question chips inside the chatbot.
+2. Properly center Christopher’s self-portrait image on mobile.
+
+Do not redesign the website.
+Do not change colors, layout, copy, buttons, sections, desktop styling, or anything unrelated.
+After making changes, tell me exactly which files were edited and what specific CSS/component change fixed the mobile portrait alignment.

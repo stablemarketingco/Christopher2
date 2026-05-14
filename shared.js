@@ -202,11 +202,26 @@
       messages.scrollTop = messages.scrollHeight;
     }
 
+    var chips = [
+      {label:'Schedule a consultation', query:'schedule a consultation'},
+      {label:'What\'s your pricing?',   query:'what is the pricing'},
+      {label:'Where are you located?',  query:'where are you located'},
+      {label:'What services do you offer?', query:'what services do you offer'},
+      {label:'How do I contact Christopher?', query:'how do I contact christopher'}
+    ];
+
+    var chipBar = document.getElementById('al-chat-chips');
+
+    function hideChips(){
+      if(chipBar){ chipBar.style.display = 'none'; }
+    }
+
     function showWelcome(){
       if(welcomeShown) return;
       welcomeShown = true;
       setTimeout(function(){
         addMessage('Hello! I\'m the Ashvale Legal assistant. I can answer basic questions about services, scheduling, pricing, and contact information. How can I help you today?', 'bot');
+        if(chipBar){ chipBar.style.display = 'flex'; }
       }, 300);
     }
 
@@ -228,9 +243,25 @@
 
     closeBtn.addEventListener('click', closeChat);
 
+    if(chipBar){
+      chips.forEach(function(chip){
+        var btn = document.createElement('button');
+        btn.className = 'al-chip';
+        btn.textContent = chip.label;
+        btn.addEventListener('click', function(){
+          hideChips();
+          addMessage(chip.label, 'user');
+          var response = getResponse(chip.query);
+          setTimeout(function(){ addMessage(response, 'bot'); }, 400);
+        });
+        chipBar.appendChild(btn);
+      });
+    }
+
     function handleSend(){
       var val = input.value.trim();
       if(!val) return;
+      hideChips();
       addMessage(val, 'user');
       input.value = '';
       var response = getResponse(val);
