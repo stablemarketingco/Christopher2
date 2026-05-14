@@ -110,10 +110,7 @@ p:last-child{margin-bottom:0}
 .mobile-nav-overlay a,.mobile-nav-overlay button{display:block;width:100%;padding:16px 0;font-size:1.05rem;font-weight:500;color:var(--navy);border-bottom:1px solid var(--border);background:none;border-top:none;border-left:none;border-right:none;text-align:left;cursor:pointer;font-family:var(--font-sans)}
 .mobile-nav-overlay .mobile-sub{padding-left:20px;color:var(--slate);font-size:.95rem}
 .mobile-nav-overlay .mobile-cta{margin-top:24px;background:var(--navy);color:var(--white)!important;border:none;border-radius:var(--radius);padding:14px 24px;text-align:center;font-weight:600}
-.mobile-nav-overlay .mobile-pa-btn{display:flex!important;justify-content:space-between;align-items:center;}
-.mobile-pa-arrow{font-size:.8rem;color:var(--gold);transition:transform .2s ease;flex-shrink:0;margin-left:8px;}
-.mobile-pa-subs{display:block;}
-.mobile-nav-overlay .mobile-pa-subs .mobile-sub{padding-left:20px;color:var(--slate);font-size:.95rem;}
+.mobile-section-label{padding:14px 0 6px;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border-bottom:none;}
 
 /* ─── HERO ─── */
 .hero{position:relative;min-height:min(600px,90vh);display:flex;align-items:center;overflow:hidden;padding-top:var(--header-h)}

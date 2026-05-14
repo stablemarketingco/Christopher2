@@ -1,0 +1,85 @@
+The mobile Practice Areas dropdown is still not showing up. Please fix the actual mobile navigation issue.
+
+IMPORTANT:
+Only fix the mobile navigation/menu so users can access all Practice Areas on mobile. Do not redesign the website. Do not change page content. Do not change the desktop nav unless needed to keep the same links consistent.
+
+Current problem:
+On desktop, there is supposed to be a Practice Areas dropdown.
+On mobile, I cannot find the Practice Areas dropdown or the individual practice area links anywhere in the mobile menu.
+
+Required mobile menu behavior:
+When the mobile menu opens, users must be able to access all four practice area pages:
+- Estate Planning
+- Business Law
+- Criminal Defense
+- Family Law
+
+Please inspect the actual navigation/header component and fix the mobile menu.
+
+What to check:
+- The Header/Nav component
+- Mobile menu component
+- Hamburger menu logic
+- Conditional rendering for mobile vs desktop
+- Any hidden classes like hidden, md:hidden, lg:hidden, md:flex, lg:flex
+- Whether the Practice Areas links only exist in the desktop nav
+- Whether the mobile menu is missing the Practice Areas section entirely
+- Whether a dropdown exists but is hidden behind z-index, overflow, or display issues
+- Whether clicking Practice Areas on mobile does nothing because hover-only dropdown behavior does not work on touch screens
+
+Required fix:
+Add a visible mobile Practice Areas section inside the opened hamburger menu.
+
+Best implementation:
+Inside the mobile menu, include either:
+
+Option A — Simple always-visible links:
+Practice Areas
+- Estate Planning
+- Business Law
+- Criminal Defense
+- Family Law
+
+OR
+
+Option B — Tap-to-expand Practice Areas:
+Practice Areas ▼
+When tapped, it expands to show:
+- Estate Planning
+- Business Law
+- Criminal Defense
+- Family Law
+
+Either option is fine, but the links must be visible and tappable on mobile.
+
+Mobile links should go to the existing routes:
+- /estate-planning
+- /business-law
+- /criminal-defense
+- /family-law
+
+Important requirements:
+- Do NOT create duplicate pages.
+- Do NOT create new routes unless one of these routes is actually missing.
+- Do NOT remove the desktop dropdown.
+- Do NOT break desktop navigation.
+- Do NOT rely on hover for mobile dropdowns.
+- Do NOT hide Practice Areas behind a menu that cannot be tapped.
+- Do NOT make broad styling changes.
+- Do NOT change the homepage, chatbot, footer, page copy, colors, or images.
+
+If the current desktop dropdown uses hover, create separate mobile-friendly behavior because hover does not work reliably on phones.
+
+Please test the fix:
+1. Open the mobile preview.
+2. Click the hamburger menu.
+3. Confirm Practice Areas is visible.
+4. Confirm Estate Planning, Business Law, Criminal Defense, and Family Law are visible or expandable.
+5. Confirm each link navigates to the correct existing page.
+
+After making the fix, tell me:
+1. Which file/component you edited.
+2. Why the Practice Areas dropdown was missing on mobile.
+3. Whether you used always-visible links or tap-to-expand behavior.
+4. The exact routes used for each practice area.
+5. Confirm that the mobile preview was tested.

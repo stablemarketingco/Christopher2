@@ -33,31 +33,18 @@
 
   navLinks.forEach(function(item){
     if(item.children){
-      var btn = document.createElement('button');
-      btn.className = 'mobile-pa-btn';
-      btn.innerHTML = '<span>' + item.label + '</span><span class="mobile-pa-arrow" aria-hidden="true">&#9660;</span>';
-      overlay.appendChild(btn);
-
-      var subGroup = document.createElement('div');
-      subGroup.className = 'mobile-pa-subs';
+      var label = document.createElement('div');
+      label.className = 'mobile-section-label';
+      label.textContent = item.label;
+      overlay.appendChild(label);
 
       item.children.forEach(function(child){
         var a = document.createElement('a');
         a.href = child.href;
         a.textContent = child.label;
         a.className = 'mobile-sub';
-        subGroup.appendChild(a);
+        overlay.appendChild(a);
       });
-
-      overlay.appendChild(subGroup);
-
-      var open = true;
-      btn.addEventListener('click', function(){
-        open = !open;
-        subGroup.style.display = open ? 'block' : 'none';
-        btn.querySelector('.mobile-pa-arrow').style.transform = open ? '' : 'rotate(-90deg)';
-      });
-
     } else {
       var a = document.createElement('a');
       a.href = item.href;
