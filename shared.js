@@ -34,15 +34,41 @@
   navLinks.forEach(function(item){
     if(item.children){
       var btn = document.createElement('button');
-      btn.textContent = item.label;
+      btn.className = 'mobile-expand-btn';
+      btn.setAttribute('aria-expanded','true');
+
+      var btnLabel = document.createElement('span');
+      btnLabel.textContent = item.label;
+
+      var btnArrow = document.createElement('span');
+      btnArrow.className = 'mobile-expand-arrow';
+      btnArrow.setAttribute('aria-hidden','true');
+      btnArrow.textContent = '▾';
+
+      btn.appendChild(btnLabel);
+      btn.appendChild(btnArrow);
       overlay.appendChild(btn);
+
+      var subGroup = document.createElement('div');
+      subGroup.className = 'mobile-sub-group';
+
       item.children.forEach(function(child){
         var a = document.createElement('a');
         a.href = child.href;
         a.textContent = child.label;
         a.className = 'mobile-sub';
-        overlay.appendChild(a);
+        subGroup.appendChild(a);
       });
+
+      overlay.appendChild(subGroup);
+
+      btn.addEventListener('click', function(){
+        var expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        subGroup.classList.toggle('mobile-sub-group--collapsed', expanded);
+        btnArrow.style.transform = expanded ? 'rotate(-90deg)' : '';
+      });
+
     } else {
       var a = document.createElement('a');
       a.href = item.href;
