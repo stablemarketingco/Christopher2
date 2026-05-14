@@ -1,0 +1,91 @@
+The mobile hero portrait still looks wrong. Please fix the ACTUAL visible alignment of Christopher’s portrait on mobile.
+
+Important: The issue may not be that the image file/container is mathematically centered. The issue is that the visible subject, Christopher’s face/body, appears off-center on mobile. So the fix may need to adjust the visible crop using object-position or background-position.
+
+ONLY fix this mobile portrait alignment issue. Do not change anything else.
+
+Problem:
+On mobile, Christopher’s self-portrait in the hero section appears pushed too far left / not visually centered. I want Christopher’s face and upper body to appear centered in the mobile hero area.
+
+Please inspect how the portrait is implemented:
+- If it is an <img>, check object-fit and object-position.
+- If it is a background image, check background-size and background-position.
+- If it is absolutely positioned, check left/right/transform settings.
+- Check mobile media queries for anything affecting the portrait position.
+- Check parent containers for flex/grid alignment, margins, padding, width, or overflow issues.
+
+Required fix:
+On mobile only, adjust the image positioning so Christopher appears visually centered.
+
+If the portrait is an <img>, the fix may look something like this, using the real class name from the project:
+
+@media (max-width: 768px) {
+  .ACTUAL-PORTRAIT-CLASS {
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+If “center center” still makes Christopher look off-center because of the crop, adjust it visually, for example:
+
+@media (max-width: 768px) {
+  .ACTUAL-PORTRAIT-CLASS {
+    object-position: 45% center;
+  }
+}
+
+or:
+
+@media (max-width: 768px) {
+  .ACTUAL-PORTRAIT-CLASS {
+    object-position: 55% center;
+  }
+}
+
+Use whichever value makes Christopher’s face/body look visually centered on mobile.
+
+If the portrait is a background image, the fix may look something like this, using the real class name from the project:
+
+@media (max-width: 768px) {
+  .ACTUAL-HERO-IMAGE-CLASS {
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+If center center still looks off, adjust it visually:
+
+@media (max-width: 768px) {
+  .ACTUAL-HERO-IMAGE-CLASS {
+    background-position: 45% center;
+  }
+}
+
+or:
+
+@media (max-width: 768px) {
+  .ACTUAL-HERO-IMAGE-CLASS {
+    background-position: 55% center;
+  }
+}
+
+Do not blindly paste all of these examples. Inspect the existing files and apply the correct rule to the actual class name being used.
+
+Very important restrictions:
+- Do NOT change the desktop version.
+- Do NOT change the chatbot.
+- Do NOT change the logo.
+- Do NOT change the text.
+- Do NOT change the buttons.
+- Do NOT change colors.
+- Do NOT change spacing or redesign the hero section.
+- Do NOT replace the portrait image.
+- Do NOT change unrelated images.
+- Do NOT change anything except the mobile portrait positioning/cropping needed to make Christopher visually centered.
+
+After making the fix:
+1. Tell me exactly which file was edited.
+2. Tell me the exact class name you changed.
+3. Tell me whether the portrait was an <img> or a background image.
+4. Tell me the exact CSS rule you added or changed.
+5. Confirm that you checked the mobile preview and that Christopher’s face/body is now visually centered.

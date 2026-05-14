@@ -620,7 +620,7 @@ body{background:#fff;}
   .leader-logo{height:82px;width:190px;clip-path:none;background:#fff;border-radius:0 0 8px 8px;padding:8px 14px;}
   .header-phone{display:none;}
   .leader-hero{min-height:690px;align-items:flex-end;}
-  .hero-attorney-wrap{width:300px;left:-95px;opacity:.78;}
+  .hero-attorney-wrap{width:300px;left:50%;transform:translateX(-50%);opacity:.88;}
   .leader-hero-content{margin:0 auto;text-align:center;padding:110px 0 54px;}
   .leader-hero-content h1{font-size:2.1rem;letter-spacing:.12em;}
   .leader-hero-content h1 span{font-size:1rem;letter-spacing:.1em;}
