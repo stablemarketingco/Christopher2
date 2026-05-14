@@ -126,52 +126,68 @@
 
     var faqs = [
       {
-        keys:['schedule','book','appointment','consult','consultation','meeting','free','30 min'],
-        answer:'Ashvale Legal offers a free 30-minute consultation with Christopher. You can book online anytime — just click <strong>Schedule a Free Consultation</strong> below, or call <a href="tel:+18013697005">801.369.7005</a>.'
+        keys:['hello','hi','hey','good morning','good afternoon','howdy'],
+        answer:'Hello! I can answer basic questions about Ashvale Legal\'s services, pricing, scheduling, and contact information. What can I help you with today?'
       },
       {
-        keys:['price','cost','fee','flat','how much','charge','billing','rate'],
-        answer:'Ashvale Legal uses flat-fee pricing, so you\'ll know the full cost before any work begins — no surprise bills. For a specific quote, contact Christopher directly.'
+        keys:['what services','what do you offer','what areas','what type of legal','what kind of law','practice areas','what can you help','what do you handle','what does ashvale'],
+        answer:'Ashvale Legal handles four main practice areas: <strong>Estate Planning</strong> (wills, trusts, powers of attorney, healthcare directives), <strong>Business Law</strong> (entity formation, contracts, business disputes), <strong>Criminal Defense</strong> (DUI, drug charges, felonies, expungements), and <strong>Family Law</strong> (divorce, custody, prenuptial agreements). I can\'t provide legal advice for your specific situation, but Christopher can — schedule a free consultation below.'
       },
       {
-        keys:['estate planning','will','trust','power of attorney','healthcare directive','guardianship','beneficiary'],
-        answer:'Christopher handles estate planning including wills, revocable living trusts, powers of attorney, healthcare directives, and guardianship designations — all tailored to your specific situation, not a generic template.'
+        keys:['estate planning','will','trust','revocable','irrevocable','power of attorney','healthcare directive','guardianship','beneficiary','probate','inheritance'],
+        answer:'Ashvale Legal handles a full range of estate planning services including wills, revocable living trusts, powers of attorney, healthcare directives, and guardianship designations — all drafted for your specific situation, not a generic template. For guidance on what you need, schedule a free consultation with Christopher.'
       },
       {
-        keys:['business law','entity','llc','corporation','contract','formation','dispute','business'],
-        answer:'Ashvale Legal assists with entity formation, contract drafting and review, business dispute resolution, and ongoing business counsel for Utah entrepreneurs and small businesses.'
+        keys:['business law','business formation','entity formation','llc','corporation','sole proprietor','partnership','contract','contracts','business dispute','entrepreneur','small business','operating agreement'],
+        answer:'Ashvale Legal assists Utah businesses and entrepreneurs with entity formation (LLCs, corporations), contract drafting and review, business dispute resolution, and ongoing business counsel. For advice about your specific situation, schedule a free consultation.'
       },
       {
-        keys:['criminal','defense','charge','arrest','dui','misdemeanor','felony'],
-        answer:'Christopher also handles criminal defense matters. For details about your specific situation, please contact him directly — each case is unique and requires a personal review.'
+        keys:['criminal defense','criminal','felony','felonies','misdemeanor','expungement','expunge','record','weapons','assault','domestic violence','theft','drug','drugs'],
+        answer:'Yes — Ashvale Legal handles criminal defense matters including DUI and impaired driving, drug charges, assault and domestic violence, theft and property crimes, weapons offenses, misdemeanors, felony defense, and expungements. Christopher is a former prosecutor and ARIDE-certified, bringing insider knowledge to every defense. For advice about your specific charge, please schedule a free consultation.'
       },
       {
-        keys:['family law','divorce','custody','child','alimony','adoption','family'],
-        answer:'Ashvale Legal provides family law services. For questions about your specific situation, please contact Christopher directly so he can properly review your case.'
+        keys:['dui','dwi','drunk driving','impaired','impairment','sobriety','breathalyzer','field sobriety','aride'],
+        answer:'Yes — Ashvale Legal handles DUI and impaired driving defense. Christopher is ARIDE-certified, which means he evaluates the evidence at the same technical level as the officer who conducted your roadside assessment — challenging both the legal process and the science behind the charge. For advice about your specific situation, schedule a free consultation.'
       },
       {
-        keys:['location','address','office','where','south jordan','salt lake','utah'],
-        answer:'Ashvale Legal is based in South Jordan, Utah and serves Salt Lake County, Utah County, and surrounding areas including Herriman, Riverton, West Jordan, and Draper.'
+        keys:['family law','divorce','custody','child custody','parent time','asset division','property settlement','prenuptial','postnuptial','prenup','alimony','modification','lgbtq'],
+        answer:'Yes — Ashvale Legal handles family law matters including prenuptial and postnuptial agreements, divorce, asset division, child custody and parent time, and custody modifications. Ashvale Legal is also a proud LGBTQ+ ally with experience serving all family structures. For guidance on your specific situation, please schedule a free consultation.'
       },
       {
-        keys:['hours','open','available','when','time'],
-        answer:'Office hours are Monday through Friday, 9:00 AM – 5:00 PM. You can also schedule online 24/7 using the booking link.'
+        keys:['price','cost','fee','flat fee','flat-fee','how much','billing','rate','hourly','transparent','pricing','what does it cost','afford'],
+        answer:'Ashvale Legal uses flat-fee pricing — you know exactly what representation costs before any work begins. No hourly billing, no surprise invoices. The exact fee depends on the type and complexity of your matter. The best next step is a free 30-minute consultation where Christopher will explain your options and provide an upfront quote.'
       },
       {
-        keys:['contact','email','phone','call','reach','christopher','chris'],
-        answer:'You can reach Christopher at <a href="tel:+18013697005">801.369.7005</a> or by email at <a href="mailto:chris@ashvalelaw.com">chris@ashvalelaw.com</a>. Or schedule a free consultation using the button below.'
+        keys:['schedule','book','appointment','consultation','consult','meeting','30 min','30-minute','free consult','book online'],
+        answer:'Ashvale Legal offers a free 30-minute consultation with Christopher — available by phone, video, or in person. Click <strong>Schedule a Free Consultation</strong> below to book online anytime, or call <a href="tel:+18013697005">801.369.7005</a> during business hours.'
       },
       {
-        keys:['veteran','army','military','service'],
-        answer:'Christopher R. Topham is a U.S. Army veteran with nearly two decades of military service. He founded Ashvale Legal on the values of integrity, duty, and accountability.'
+        keys:['phone','video','in person','virtual','zoom','remote','online consult','how to meet'],
+        answer:'Consultations are available by phone, video, or in person — whichever works best for you. Use the button below to schedule, or call <a href="tel:+18013697005">801.369.7005</a>.'
       },
       {
-        keys:['hello','hi','hey','good morning','good afternoon','help','start'],
-        answer:'Hello! I\'m the Ashvale Legal assistant. I can help with questions about services, scheduling, pricing, location, and contact information. How can I help you today?'
+        keys:['contact','email','phone','call','reach','christopher','chris','attorney','topham'],
+        answer:'You can reach Christopher directly at <a href="tel:+18013697005">801.369.7005</a> or by email at <a href="mailto:chris@ashvalelaw.com">chris@ashvalelaw.com</a>. Office hours are Monday–Friday, 9 AM–5 PM. You can also schedule a free consultation online using the button below.'
+      },
+      {
+        keys:['location','address','office','where','south jordan','salt lake','utah county','herriman','riverton','draper'],
+        answer:'Ashvale Legal is based in South Jordan, Utah and serves Salt Lake County, Utah County, and surrounding communities including Herriman, Riverton, West Jordan, and Draper.'
+      },
+      {
+        keys:['hours','open','available','when','office hours','business hours'],
+        answer:'Office hours are Monday through Friday, 9:00 AM – 5:00 PM. You can also schedule a consultation online 24/7 using the booking link below.'
+      },
+      {
+        keys:['veteran','army','military','service','patriot','vso'],
+        answer:'Christopher R. Topham is a U.S. Army veteran with nearly two decades of military service. Ashvale Legal is a veteran-owned firm built on the values of integrity, discipline, and accountability — the same standard applied to every client.'
+      },
+      {
+        keys:['legal advice','can you advise','give me advice','what should i do','am i liable','do i have a case'],
+        answer:'I can answer general questions about Ashvale Legal\'s services, but I\'m not able to provide legal advice for your specific situation. For case-specific legal guidance, please schedule a free consultation with Christopher — he\'ll review your situation personally and give you an honest assessment of your options.'
       }
     ];
 
-    var legalKeys = ['advice','sue','lawsuit','legal issue','my case','charged with','my situation','should i','guilty','innocent','rights','liable','liable','attorney client','negligence','accident','injury'];
+    var legalKeys = ['what should i do with my case','is my case strong','will i win','am i guilty','can they prove','what are my chances'];
 
     var welcomeShown = false;
 

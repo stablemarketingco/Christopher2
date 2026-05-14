@@ -1,0 +1,165 @@
+I need you to update ONLY the existing Criminal Defense and Family Law pages using the client-provided copy documents and color direction.
+
+Important context:
+The website ALREADY has pages for:
+- Business Law
+- Estate Planning
+- Criminal Defense
+- Family Law
+
+Do NOT create duplicate pages.
+Do NOT create new routes unless a required route is missing.
+Do NOT change the chatbot.
+Do NOT change the navigation.
+Do NOT change the footer.
+Do NOT change Business Law or Estate Planning.
+Do NOT change photos unless needed for the existing layout.
+Do NOT redesign the whole website.
+
+CLIENT FEEDBACK TO ADDRESS:
+“Color variant — Can we see a version with the teal (#00191D) as the primary background color? It may not work, but I just want to get it out of my head.”
+
+The client also provided copy documents for:
+1. Criminal Defense page
+2. Family Law page
+
+TASK 1 — Update the existing Criminal Defense page
+Find the current Criminal Defense page in the project and update that existing page using the provided Criminal Defense copy document.
+
+Do NOT create a new Criminal Defense page.
+
+Use this section order from the document:
+1. Hero
+2. The Insider Advantage
+3. DUI & Impairment Defense
+4. Criminal Defense Practice Areas
+5. The Process
+6. The Ashvale Difference
+7. Closing CTA
+
+Design direction:
+- Use #00191D as the primary background color for this page where it makes sense.
+- The hero section should strongly use #00191D.
+- The final CTA section should also use #00191D.
+- Use gold #CDB579 for CTA buttons, accents, dividers, or small section labels where appropriate.
+- Use cream/white text on dark teal sections for readability.
+- Keep the design serious, polished, high-end, and professional.
+- Do not make the page feel flashy or generic.
+
+CTA requirements:
+Use this consultation link for all Criminal Defense CTA buttons:
+https://ashvalelaw.cliogrow.com/book/3494140267d6b8330a02c39e8ebb3258
+
+Use CTA text such as:
+- “Schedule a Free Consultation”
+- “Schedule Your Free Consultation”
+
+Include the secondary line:
+“Consultations available by phone, video, or in person.”
+
+Content requirements:
+Use the client-provided Criminal Defense copy as the source of truth. Do not rewrite the copy heavily. Format it cleanly into the existing page layout.
+
+Include the key practice areas:
+- DUI and Impaired Driving
+- Drug Charges
+- Assault and Domestic Violence
+- Theft and Property Crimes
+- Weapons Offenses
+- Misdemeanors and Infractions
+- Felony Defense
+- Expungements
+
+TASK 2 — Update the existing Family Law page
+Find the current Family Law page in the project and update that existing page using the provided Family Law copy document.
+
+Do NOT create a new Family Law page.
+
+Use this section order from the document:
+1. Hero
+2. Our Approach
+3. Family Law Practice Areas
+4. Serving LGBTQ+ Families
+5. The Estate Planning Connection
+6. The Ashvale Standard
+7. Closing CTA
+
+Design direction:
+- Family Law should feel warmer, calmer, softer, and more human than Criminal Defense.
+- Do NOT make the entire Family Law page dark teal.
+- Use cream, white, soft warm backgrounds, and subtle teal/gold accents.
+- It should still feel connected to the Ashvale Legal brand.
+- The tone should feel reassuring, thoughtful, and professional.
+- Avoid urgency-heavy styling on this page.
+
+CTA requirements:
+Use this consultation link for all Family Law CTA buttons:
+https://ashvalelaw.cliogrow.com/book/3494140267d6b8330a02c39e8ebb3258
+
+Use CTA text such as:
+- “Schedule a Free Consultation”
+- “Schedule Your Free Consultation”
+
+Include the secondary line:
+“Consultations available by phone, video, or in person.”
+
+Content requirements:
+Use the client-provided Family Law copy as the source of truth. Do not rewrite the copy heavily. Format it cleanly into the existing page layout.
+
+Include the key practice areas:
+- Prenuptial Agreements
+- Postnuptial Agreements
+- Divorce
+- Asset Division and Property Settlement
+- Child Custody and Parent Time
+- Custody Modifications
+
+Also include the sections about:
+- Serving LGBTQ+ Families
+- The Estate Planning Connection
+- The Ashvale Standard
+- Closing CTA
+
+TASK 3 — Teal color variant
+The client specifically asked to see teal #00191D as the primary background color.
+
+Apply this carefully:
+- Use #00191D strongly on the Criminal Defense page.
+- Use #00191D as accents or selective sections on Family Law only where appropriate.
+- Keep all text readable.
+- Do not force the entire website into teal.
+- Do not alter unrelated pages.
+- Do not change the global brand styling unless necessary for these two pages.
+
+VERY IMPORTANT RESTRICTIONS:
+- Do NOT change the chatbot.
+- Do NOT change the Start Chat button.
+- Do NOT change quick question chips.
+- Do NOT change navigation.
+- Do NOT change footer.
+- Do NOT change Business Law.
+- Do NOT change Estate Planning.
+- Do NOT change the homepage.
+- Do NOT create duplicate pages.
+- Do NOT create duplicate routes.
+- Do NOT add fake testimonials.
+- Do NOT add fake case results.
+- Do NOT invent legal claims.
+- Do NOT replace current photos.
+- Do NOT break mobile responsiveness.
+- Do NOT make broad sitewide design changes.
+
+Before finishing:
+- Check desktop and mobile views for both Criminal Defense and Family Law.
+- Make sure buttons work.
+- Make sure the consultation link is correct.
+- Make sure there are no duplicate pages or broken routes.
+- Make sure the pages still match the overall Ashvale Legal brand.
+
+After finishing, tell me:
+1. Exactly which files were edited.
+2. Which existing pages were updated.
+3. Whether any routes were changed.
+4. What you changed for the teal #00191D color direction.
+5. How to preview the Criminal Defense page.
+6. How to preview the Family Law page.

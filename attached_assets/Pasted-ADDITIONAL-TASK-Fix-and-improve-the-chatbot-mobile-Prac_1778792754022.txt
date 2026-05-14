@@ -1,0 +1,107 @@
+ADDITIONAL TASK — Fix and improve the chatbot + mobile Practice Areas menu
+
+The chatbot currently does not work well. It gives the same generic “call us” answer for almost everything, and when asked questions like “What type of legal advice is available?” it says it does not know. Please improve the chatbot so it can answer basic FAQ questions clearly while still avoiding legal advice.
+
+TASK 4 — Improve chatbot FAQ responses
+Update the chatbot logic so it can answer common visitor questions about the firm and practice areas instead of always saying to call.
+
+The chatbot should be able to answer basic questions about:
+- Estate Planning
+- Business Law
+- Criminal Defense
+- Family Law
+- Scheduling a consultation
+- Flat-fee pricing / transparent pricing if already mentioned on the site
+- Contacting Christopher
+- Phone/video/in-person consultations
+- What services the firm offers
+- Whether the firm handles DUI, divorce, custody, business formation, contracts, estate planning, etc.
+
+Important:
+The chatbot should NOT give legal advice or specific recommendations for someone’s case. But it SHOULD explain what types of legal services are available.
+
+Example chatbot behavior:
+
+Question: “What type of legal advice is available?”
+Better answer:
+“Ashvale Legal helps with estate planning, business law, criminal defense, and family law matters. I can explain the general services offered, but I cannot provide legal advice for your specific situation. For personal legal guidance, please schedule a consultation with Christopher.”
+
+Question: “Do you handle DUI cases?”
+Better answer:
+“Yes. Ashvale Legal handles criminal defense matters including DUI and impaired driving, drug charges, assault and domestic violence, theft and property crimes, weapons offenses, misdemeanors, felonies, and expungements. For advice about your specific charge, please schedule a consultation.”
+
+Question: “Do you handle divorce?”
+Better answer:
+“Yes. Ashvale Legal handles family law matters including divorce, asset division, child custody and parent time, custody modifications, prenuptial agreements, and postnuptial agreements. For guidance about your specific situation, please schedule a consultation.”
+
+Question: “How much does it cost?”
+Better answer:
+“Ashvale Legal emphasizes transparent pricing and flat-fee agreements where appropriate. The exact cost depends on the type and complexity of the matter. The best next step is to schedule a free consultation so Christopher can explain your options.”
+
+Question: “Can you give me legal advice?”
+Better answer:
+“I can answer basic questions about Ashvale Legal’s services, but I cannot provide legal advice. For legal questions specific to your situation, please contact Christopher directly or schedule a consultation.”
+
+Requirements:
+- Keep the chatbot professional and helpful.
+- Do not make it overly restrictive.
+- Do not make every answer say only “call us.”
+- It should answer general service questions first, then direct users to schedule if they need case-specific help.
+- Keep the legal disclaimer.
+- Keep the “Start Chat” button.
+- Keep quick-question chips if they already exist.
+- Make sure the chatbot works on desktop and mobile.
+
+TASK 5 — Fix missing Practice Areas dropdown on mobile
+The Practice Areas dropdown/menu is currently absent on mobile. Please fix this.
+
+Requirements:
+- On mobile, users must be able to access all practice area pages.
+- The mobile menu should include:
+  - Estate Planning
+  - Business Law
+  - Criminal Defense
+  - Family Law
+- If there is a “Practice Areas” parent item, make it expandable/tappable on mobile.
+- Do not remove the desktop dropdown.
+- Do not break the desktop navigation.
+- Do not redesign the whole nav.
+- Only fix the missing mobile Practice Areas access.
+
+TASK 6 — Update outdated “two practice areas” wording
+Somewhere on the main menu/homepage/site copy it still says there are only “two practice areas.” That is outdated.
+
+Please find and update any wording that says or implies there are only two practice areas.
+
+Replace wording like:
+- “two practice areas”
+- “our two practice areas”
+- “both practice areas”
+
+With wording like:
+- “multiple practice areas”
+- “our practice areas”
+- “our core practice areas”
+- “Estate Planning, Business Law, Criminal Defense, and Family Law”
+
+Important:
+- Do not rewrite the entire homepage.
+- Only update the outdated wording so it accurately reflects the current services.
+- The site should now reflect four main practice areas:
+  1. Estate Planning
+  2. Business Law
+  3. Criminal Defense
+  4. Family Law
+
+VERY IMPORTANT:
+Do not undo or change the Criminal Defense and Family Law page updates from the earlier tasks.
+Do not create duplicate pages.
+Do not change unrelated content.
+Do not redesign the whole website.
+
+After finishing, tell me:
+1. What chatbot file/component was changed.
+2. What chatbot FAQ logic was improved.
+3. What mobile navigation file/component was changed.
+4. How the mobile Practice Areas menu now works.
+5. Where the outdated “two practice areas” wording was found and what it was changed to.

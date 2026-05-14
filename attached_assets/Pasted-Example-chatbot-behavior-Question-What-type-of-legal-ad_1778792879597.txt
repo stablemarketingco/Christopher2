@@ -1,0 +1,31 @@
+Example chatbot behavior:
+
+Question: “What type of legal advice is available?”
+Better answer:
+“Ashvale Legal helps with estate planning, business law, criminal defense, and family law matters. I can explain the general services offered, but I cannot provide legal advice for your specific situation. For personal legal guidance, please schedule a consultation with Christopher.”
+
+Question: “Do you handle DUI cases?”
+Better answer:
+“Yes. Ashvale Legal handles criminal defense matters including DUI and impaired driving, drug charges, assault and domestic violence, theft and property crimes, weapons offenses, misdemeanors, felonies, and expungements. For advice about your specific charge, please schedule a consultation.”
+
+Question: “Do you handle divorce?”
+Better answer:
+“Yes. Ashvale Legal handles family law matters including divorce, asset division, child custody and parent time, custody modifications, prenuptial agreements, and postnuptial agreements. For guidance about your specific situation, please schedule a consultation.”
+
+Question: “How much does it cost?”
+Better answer:
+“Ashvale Legal emphasizes transparent pricing and flat-fee agreements where appropriate. The exact cost depends on the type and complexity of the matter. The best next step is to schedule a free consultation so Christopher can explain your options.”
+
+Question: “Can you give me legal advice?”
+Better answer:
+“I can answer basic questions about Ashvale Legal’s services, but I cannot provide legal advice. For legal questions specific to your situation, please contact Christopher directly or schedule a consultation.”
+
+Requirements:
+- Keep the chatbot professional and helpful.
+- Do not make it overly restrictive.
+- Do not make every answer say only “call us.”
+- It should answer general service questions first, then direct users to schedule if they need case-specific help.
+- Keep the legal disclaimer.
+- Keep the “Start Chat” button.
+- Keep quick-question chips if they already exist.
+- Make sure the chatbot works on desktop and mobile.
